@@ -1,0 +1,255 @@
+﻿@model CreateUserViewModel
+@using MainsoftTesting.Models
+
+@{
+    ViewData["Title"] = "Crear usuario";
+}
+
+
+<div>
+    <h1>Crear nuevo usuario</h1>
+    <br/>
+
+    <!-- Card for personal information -->
+    <div class="card">
+        <div class="card-header">
+            Información personal
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastName, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.LastName)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CellPhone, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.CellPhone, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.CellPhone)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Phone, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Phone)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Gender, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))),"--",new { @class = "form-select" })
+                            @Html.ValidationMessageFor(model => model.Gender)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.MaritalStatus, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.MaritalStatus, new SelectList(Enum.GetValues(typeof(MaritalStatus))),"--",new { @class = "form-select" })
+                            @Html.ValidationMessageFor(model => model.MaritalStatus)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DocType, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.DocType, new SelectList(Enum.GetValues(typeof(DocumentType))),"--",new { @class = "form-select" })
+                            @Html.ValidationMessageFor(model => model.DocType)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DocNumber, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.DocNumber, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DocNumber)
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Address, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Address)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Nationality, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Nationality, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Nationality)
+                        </div>
+                    </div>
+
+                </div>        
+                <div class="col-4">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Age, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Age, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Age)
+                        </div>
+                    </div>
+
+                </div>        
+                <div class="col-4">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.BirthCity, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.BirthCity, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.BirthCity)
+                        </div>
+                    </div>
+
+                </div>        
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!-- Card for laboral information -->
+    <div class="card">
+        <div class="card-header">
+            Información laboral
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.JobSituation, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.JobSituation, new SelectList(Enum.GetValues(typeof(JobStatuis))),"--",new { @class = "form-select" })
+                            @Html.ValidationMessageFor(model => model.JobSituation)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastJobCompany, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.LastJobCompany, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.LastJobCompany)
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastJobCity, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.LastJobCity, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.LastJobCity)
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastJobName, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.LastJobName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.LastJobName)
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastJobCity, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.LastJobCity, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.LastJobCity)
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!-- Card for academic information -->
+    <div class="card">
+        <div class="card-header">
+            Información académica
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AcademicLevel, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.AcademicLevel, new SelectList(Enum.GetValues(typeof(StudyLevel))),"--",new { @class = "form-select" })
+                            @Html.ValidationMessageFor(model => model.AcademicLevel)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AcademicInstitution, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.AcademicInstitution, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.AcademicInstitution)
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DegreeFinalization, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.DegreeFinalization, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DegreeFinalization)
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-9">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DegreeTitle, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.DegreeTitle, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DegreeTitle)
+                        </div>
+                    </div>
+                </div> 
+            </div>        
+        </div>
+    </div>
+    <br/>    
+    <div class="btn btn-success">
+        Guardar usuario
+    </div>
+</div>

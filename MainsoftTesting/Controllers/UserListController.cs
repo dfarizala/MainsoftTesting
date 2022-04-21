@@ -1,28 +1,38 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using MainsoftTesting.Models.CQRS.Response;
+using System.Text;
 
 namespace MainsoftTesting.Controllers
 {
     public class UserListController : Controller
     {
+        string _baseUrl = "https://mainsoftservices.azurewebsites.net/";
         // GET: UserListController
-        public ActionResult Index()
+        async public Task<ActionResult> Index()
         {
-            List<Models.CreateUserViewModel> users = new List<Models.CreateUserViewModel>();
-            users.Add(new Models.CreateUserViewModel { Address = " Calle 22c # 29a 47",
-                                                       Name = "Diego Fernando",
-                                                       LastName = "Arizala Revelo",
-                                                       DocType = "CC",
-                                                       DocNumber = "80202658",
-                                                       CellPhone = "3125864447",
-                                                       Age = 39,
-                                                       Nationality = "Colombiano",
-                                                       Gender = "Masculino",
-                                                       MaritalStatus = "Separado",
-                                                       Phone = "3407981"
-                                                     });
+            UserListResponse _Result = new UserListResponse();
 
-            return View(users);
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_baseUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage Res = await client.GetAsync("User");
+                if (Res.IsSuccessStatusCode)
+                {
+                    var UserList = Res.Content.ReadAsStringAsync().Result;
+                    _Result = JsonConvert.DeserializeObject<UserListResponse>(UserList);
+                }
+
+                return View(_Result.Users);
+            }
         }
 
         // GET: UserListController/Details/5
@@ -40,11 +50,54 @@ namespace MainsoftTesting.Controllers
         // POST: UserListController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        async public Task<ActionResult> Create(IFormCollection collection)
         {
+            UserResponse _Result = new UserResponse();
+
             try
             {
-                return RedirectToAction(nameof(Index));
+                Models.CreateUserViewModel _userObject = 
+                    new Models.CreateUserViewModel { AcademicInstitution = collection["AcademicInstitution"].ToString(),
+                                                     Address = collection["Address"].ToString(),
+                                                     AcademicLevel = collection["AcademicLevel"].ToString(),
+                                                     Age = Convert.ToInt32(collection["Age"].ToString()),
+                                                     BirthCity = collection["BirthCity"].ToString(),
+                                                     CellPhone = collection["CellPhone"].ToString(),
+                                                     DegreeFinalization = collection["DegreeFinalization"].ToString(),
+                                                     DegreeTitle = collection["DegreeTitle"].ToString(),
+                                                     DocNumber = collection["DocNumber"].ToString(),
+                                                     DocType = collection["DocType"].ToString(),
+                                                     Gender = collection["Gender"].ToString(),
+                                                     JobSituation = collection["JobSituation"].ToString(),
+                                                     LastJobCity = collection["LastJobCity"].ToString(),
+                                                     LastJobCompany = collection["LastJobCompany"].ToString(),
+                                                     LastJobName = collection["LastJobName"].ToString(),
+                                                     LastJobReasson = collection["LastJobReasson"].ToString(),
+                                                     LastName = collection["LastName"].ToString(),
+                                                     MaritalStatus = collection["MaritalStatus"].ToString(),
+                                                     Name = collection["Name"].ToString(),
+                                                     Nationality = collection["Nationality"].ToString(),
+                                                     Phone = collection["Phone"].ToString()
+                    };
+
+                string _Request = JsonConvert.SerializeObject(_userObject, Formatting.Indented);
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(_baseUrl);
+                    client.DefaultRequestHeaders.Clear();
+                    HttpContent _Content = new StringContent(_Request);
+                    //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage Res = await client.PostAsync("User/AddUser", _Content);
+                    if (Res.IsSuccessStatusCode)
+                    {
+                        var UserResponse = Res.Content.ReadAsStringAsync().Result;
+                        _Result = JsonConvert.DeserializeObject<UserResponse>(UserResponse);
+                    }
+
+                    return RedirectToAction(nameof(Index));
+                }
+
             }
             catch
             {

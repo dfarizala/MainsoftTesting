@@ -474,3 +474,5 @@ C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\refint\MainsoftTesting.dll
 C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\MainsoftTesting.pdb
 C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\MainsoftTesting.genruntimeconfig.cache
 C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\ref\MainsoftTesting.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

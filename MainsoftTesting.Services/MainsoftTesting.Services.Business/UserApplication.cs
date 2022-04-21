@@ -34,5 +34,35 @@ namespace MainsoftTesting.Services.Application
                 return response;
             }
         }
+
+        public static ListUsersResponse ListUsers()
+        {
+            ListUsersResponse response = new ListUsersResponse();
+
+            try 
+            {
+                List<User> users = UserOperations.ListUsers();
+                if(users != null)
+                {
+                    response.Success = true;
+                    response.Message = "OK";
+                    response.Error = "";
+                    response.Users = users;
+                    return response;
+                }
+
+                throw new Exception("Error retrieving records");
+
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+                response.Error = "Fail";
+                response.Users = null;
+                return response;
+
+            }
+        }
     }
 }

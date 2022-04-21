@@ -28,6 +28,12 @@ namespace MainsoftTesting.Services.Controllers
             return UserApplication.AddUser(obj);
         }
 
+        [HttpPost]
+        [Route("ListUsers")]
+        public ListUsersResponse ListUsers()
+        {
+            return UserApplication.ListUsers();
+        }
 
     }
 }

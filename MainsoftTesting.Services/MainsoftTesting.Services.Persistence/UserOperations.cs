@@ -28,5 +28,31 @@ namespace MainsoftTesting.Services.Persistence
             }
         }
 
+        public static List<User> ListUsers()
+        {
+            List<User> result = new List<User>();
+
+            try
+            {
+                using (TestingContext context = new TestingContext())
+                {
+                    var list = context.Users.ToList();
+                    foreach (MainsoftTesting.Services.Persistence.Models.User user in list)
+                    {
+                        Mapper.CreateMap<MainsoftTesting.Services.Persistence.Models.User, User>();
+                        var obj = Mapper.Map<User>(user);
+                        result.Add(obj);
+                    }
+                }
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result = null;
+                return result;
+            }
+        }
+
     }
 }

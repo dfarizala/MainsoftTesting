@@ -1,0 +1,11 @@
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\MainsoftTesting.Services.exe
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\MainsoftTesting.Services.dll
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\MainsoftTesting.Services.deps.json
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\MainsoftTesting.Services.runtimeconfig.json
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\MainsoftTesting.Services.pdb
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USUARIO\Desktop\TestingWeb\MainsoftTesting\MainsoftTesting.Services\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

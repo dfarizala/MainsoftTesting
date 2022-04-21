@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WOo9LJuHtp/ioVcSBrm6S3jD6DpjSqg9xH42NI7NR5YDVIWD90gx0M55Xdhyc1zdzmWHiKa2pg72w8fTPkrcdw==",
+  "dgSpecHash": "hG+rLanRU4n6RBs5ZJOJ0VWKOLV6dCkAsf68QS6S8Gk8foX+3pNfpimZcbkCw+1yyeD6w7DCNvUd6x6jcJBF9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\TestingWeb\\MainsoftTesting\\MainsoftTesting\\MainsoftTesting.csproj",
+  "projectFilePath": "C:\\MainsoftTesting\\MainsoftTesting\\MainsoftTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

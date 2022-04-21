@@ -1,0 +1,17 @@
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Persistence.deps.json
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Persistence.runtimeconfig.json
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Persistence.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Persistence.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\refint\MainsoftTesting.Services.Persistence.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.genruntimeconfig.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\ref\MainsoftTesting.Services.Persistence.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\bin\Debug\net6.0\MainsoftTesting.Services.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Persistence\obj\Debug\net6.0\MainsoftTesting.Services.Persistence.csproj.CopyComplete

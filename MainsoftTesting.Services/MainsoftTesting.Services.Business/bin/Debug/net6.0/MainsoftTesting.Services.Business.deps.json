@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MainsoftTesting.Services.Business/1.0.0": {
+        "runtime": {
+          "MainsoftTesting.Services.Business.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MainsoftTesting.Services.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

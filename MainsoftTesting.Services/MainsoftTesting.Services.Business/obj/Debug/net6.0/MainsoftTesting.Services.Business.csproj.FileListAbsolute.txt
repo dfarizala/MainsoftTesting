@@ -1,0 +1,12 @@
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Business.deps.json
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Business.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Business.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\refint\MainsoftTesting.Services.Business.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Business.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\ref\MainsoftTesting.Services.Business.dll

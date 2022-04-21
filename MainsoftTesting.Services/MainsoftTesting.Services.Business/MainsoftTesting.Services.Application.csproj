@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MainsoftTesting.Services.Domain\MainsoftTesting.Services.Domain.csproj" />
+    <ProjectReference Include="..\MainsoftTesting.Services.Persistence\MainsoftTesting.Services.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

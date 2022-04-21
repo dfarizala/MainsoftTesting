@@ -1,0 +1,17 @@
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Application.deps.json
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Application.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Persistence.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Release\net6.0\MainsoftTesting.Services.Persistence.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.csproj.CopyComplete
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\refint\MainsoftTesting.Services.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\MainsoftTesting.Services.Application.pdb
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Release\net6.0\ref\MainsoftTesting.Services.Application.dll

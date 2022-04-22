@@ -4,15 +4,16 @@
     ViewData["Title"] = "UserList";
 }
 
-<h1>Usuarios</h1>
-
-<p>
-    <a asp-action="Create" class="btn btn-success">Agregar nuevo usuario</a>
-</p>
-<br/>
 <div class="card">
     <div class="card-header">
-        Lista de usuarios
+        <div class="row">
+            <div class="col-10">
+                <h3>Lista de usuarios</h3>
+            </div>
+            <div class="col-2">
+                <a asp-action="Create" class="btn btn-success">Agregar nuevo usuario</a>
+            </div>
+        </div>
     </div>
     <div class="card-body">
         <div class="card">

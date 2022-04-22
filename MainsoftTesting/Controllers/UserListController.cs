@@ -87,13 +87,13 @@ namespace MainsoftTesting.Controllers
                     client.BaseAddress = new Uri(_baseUrl);
                     client.DefaultRequestHeaders.Clear();
                     HttpContent _Content = new StringContent(_Request);
-                    //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage Res = await client.PostAsync("User/AddUser", _Content);
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage Res = await client.PostAsJsonAsync("User/AddUser", _Content);
                     if (Res.IsSuccessStatusCode)
                     {
                         var UserResponse = Res.Content.ReadAsStringAsync().Result;
                         _Result = JsonConvert.DeserializeObject<UserResponse>(UserResponse);
-                    }
+                        }
 
                     return RedirectToAction(nameof(Index));
                 }

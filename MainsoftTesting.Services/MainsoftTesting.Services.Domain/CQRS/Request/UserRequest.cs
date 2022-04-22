@@ -31,4 +31,9 @@ namespace MainsoftTesting.Services.Domain.CQRS.Request
         public string? DegreeTitle { get; set; }
 
     }
+
+    public class UserDetailRequest
+    {
+        public string? Id { get; set; }
+    }
 }

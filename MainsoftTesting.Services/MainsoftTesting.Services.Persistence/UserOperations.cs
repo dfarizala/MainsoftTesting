@@ -54,5 +54,28 @@ namespace MainsoftTesting.Services.Persistence
             }
         }
 
+        public static User UserDetail(string id)
+        {
+            User result = new User();
+
+            try
+            {
+                using (TestingContext context = new TestingContext())
+                {
+                    var _Result = context.Users.FirstOrDefault(x => x.Id == Convert.ToInt32(id));
+                    Mapper.CreateMap<MainsoftTesting.Services.Persistence.Models.User, User>();
+                    var obj = Mapper.Map<User>(_Result);
+                    result = obj;
+                }
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result = null;
+                return result;
+            }
+        }
+
     }
 }

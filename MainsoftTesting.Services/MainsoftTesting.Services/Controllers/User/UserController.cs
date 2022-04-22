@@ -34,5 +34,12 @@ namespace MainsoftTesting.Services.Controllers
             return UserApplication.ListUsers();
         }
 
+        [HttpPost]
+        [Route("UserDetail")]
+        public UserDetailResponse UserDetail(UserDetailRequest request)
+        {
+            return UserApplication.UserDetail(request.Id);
+        }
+
     }
 }

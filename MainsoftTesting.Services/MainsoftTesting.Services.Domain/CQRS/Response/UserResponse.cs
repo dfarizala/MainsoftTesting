@@ -21,4 +21,13 @@ namespace MainsoftTesting.Services.Domain.CQRS.Response
         public string Message { get; set; }
         public List<User> Users { get; set; }
     }
+
+    public class UserDetailResponse
+    {
+        public bool Success { get; set; }
+        public string Error { get; set; }
+        public string Message { get; set; }
+        public User User { get; set; } 
+    }
+
 }

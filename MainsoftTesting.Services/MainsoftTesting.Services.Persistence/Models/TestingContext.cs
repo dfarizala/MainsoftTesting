@@ -81,7 +81,7 @@ namespace MainsoftTesting.Services.Persistence.Models
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                entity.Property(e => e.LasName)
+                entity.Property(e => e.LastName)
                     .HasMaxLength(200)
                     .IsUnicode(false);
 

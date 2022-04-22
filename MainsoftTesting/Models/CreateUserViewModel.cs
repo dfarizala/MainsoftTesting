@@ -5,6 +5,8 @@ namespace MainsoftTesting.Models
 {
     public class CreateUserViewModel
     {
+        [Display(Name = "Id")]
+        public string? Id { get; set; }
         [Display(Name = "Nombre")] 
         public string? Name { get; set; }
         [Display(Name = "Apellido")]

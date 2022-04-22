@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using MainsoftTesting.Models.CQRS.Request;
 using MainsoftTesting.Models.CQRS.Response;
 using System.Text;
 
@@ -14,6 +15,7 @@ namespace MainsoftTesting.Controllers
     public class UserListController : Controller
     {
         string _baseUrl = "https://mainsoftservices.azurewebsites.net/";
+        //string _baseUrl = "https://localhost:7202/";
         // GET: UserListController
         async public Task<ActionResult> Index()
         {
@@ -36,9 +38,31 @@ namespace MainsoftTesting.Controllers
         }
 
         // GET: UserListController/Details/5
-        public ActionResult Details(int id)
+        async public Task<ActionResult> Details(int id)
         {
-            return View();
+            UserDetailResponse _Result = new UserDetailResponse();
+            
+            UserDetailRequest _Request = new UserDetailRequest { Id = id.ToString() };
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_baseUrl);
+                client.DefaultRequestHeaders.Clear();
+                //HttpContent _Content = new JsonContent(_Request, );
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage Res = await client.PostAsJsonAsync("User/UserDetail", _Request);
+                if (Res.IsSuccessStatusCode)
+                {
+                    var UserResponse = Res.Content.ReadAsStringAsync().Result;
+                    _Result = JsonConvert.DeserializeObject<UserDetailResponse>(UserResponse);
+
+                    if (!_Result.Success)
+                        return View();
+                }
+
+                return View(_Result.User);
+            }
+
         }
 
         // GET: UserListController/Create
@@ -80,20 +104,23 @@ namespace MainsoftTesting.Controllers
                                                      Phone = collection["Phone"].ToString()
                     };
 
-                string _Request = JsonConvert.SerializeObject(_userObject, Formatting.Indented);
+                //string _Request = JsonConvert.SerializeObject(_userObject, Formatting.Indented);
 
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri(_baseUrl);
                     client.DefaultRequestHeaders.Clear();
-                    HttpContent _Content = new StringContent(_Request);
+                    //HttpContent _Content = new JsonContent(_Request, );
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage Res = await client.PostAsJsonAsync("User/AddUser", _Content);
+                    HttpResponseMessage Res = await client.PostAsJsonAsync("User/AddUser", _userObject);
                     if (Res.IsSuccessStatusCode)
                     {
                         var UserResponse = Res.Content.ReadAsStringAsync().Result;
                         _Result = JsonConvert.DeserializeObject<UserResponse>(UserResponse);
-                        }
+
+                        if (!_Result.Success)
+                            return View();
+                    }
 
                     return RedirectToAction(nameof(Index));
                 }

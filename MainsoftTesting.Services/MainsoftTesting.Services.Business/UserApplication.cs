@@ -64,5 +64,36 @@ namespace MainsoftTesting.Services.Application
 
             }
         }
+
+        public static UserDetailResponse UserDetail(string id)
+        {
+            UserDetailResponse response = new UserDetailResponse();
+
+            try 
+            {
+                User _User = UserOperations.UserDetail(id);
+                
+                if (_User != null)
+                {
+                    response.Success = true;
+                    response.Message = "OK";
+                    response.Error = "";
+                    response.User = _User;
+                    return response;
+                }
+
+                throw new Exception("Error retrieving record");
+
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+                response.Error = "Fail";
+                response.User = null;
+                return response;
+
+            }
+        }
     }
 }

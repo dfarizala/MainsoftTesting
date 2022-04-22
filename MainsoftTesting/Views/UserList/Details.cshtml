@@ -1,13 +1,12 @@
 ﻿@model MainsoftTesting.Models.CreateUserViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Details";
 }
 
-<h4>Crear nuevo usuario</h4>
-<hr />
+<h1>Deltalles para el usuario @Model.Name @Model.LastName</h1>
 
-<form asp-action="Create">
+<div>
     <!-- Card for personal information -->
     <div class="card">
         <div class="card-header">
@@ -15,32 +14,11 @@
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Name, new { @class = "form-label" })
-                        <div class="col-md-12">
-                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Name)
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.LastName, new { @class = "form-label" })
-                        <div class="col-md-12">
-                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.LastName)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-3">
                     <div class="form-group">
                         @Html.LabelFor(model => model.CellPhone, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.CellPhone, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.CellPhone)
                         </div>
                     </div>
                 </div>
@@ -49,7 +27,6 @@
                         @Html.LabelFor(model => model.Phone, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Phone)
                         </div>
                     </div>
                 </div>
@@ -58,7 +35,6 @@
                         @Html.LabelFor(model => model.Gender, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.DropDownListFor(model => model.Gender, new SelectList(Enum.GetValues(typeof(Gender))),"--",new { @class = "form-select" })
-                            @Html.ValidationMessageFor(model => model.Gender)
                         </div>
                     </div>
                 </div>
@@ -67,7 +43,6 @@
                         @Html.LabelFor(model => model.MaritalStatus, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.DropDownListFor(model => model.MaritalStatus, new SelectList(Enum.GetValues(typeof(MaritalStatus))),"--",new { @class = "form-select" })
-                            @Html.ValidationMessageFor(model => model.MaritalStatus)
                         </div>
                     </div>
                 </div>
@@ -78,7 +53,6 @@
                         @Html.LabelFor(model => model.DocType, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.DropDownListFor(model => model.DocType, new SelectList(Enum.GetValues(typeof(DocumentType))),"--",new { @class = "form-select" })
-                            @Html.ValidationMessageFor(model => model.DocType)
                         </div>
                     </div>
                 </div>
@@ -87,7 +61,6 @@
                         @Html.LabelFor(model => model.DocNumber, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.DocNumber, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.DocNumber)
                         </div>
                     </div>
 
@@ -97,7 +70,6 @@
                         @Html.LabelFor(model => model.Address, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Address)
                         </div>
                     </div>
                 </div>
@@ -108,7 +80,6 @@
                         @Html.LabelFor(model => model.Nationality, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.Nationality, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Nationality)
                         </div>
                     </div>
 
@@ -118,7 +89,6 @@
                         @Html.LabelFor(model => model.Age, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.Age, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Age)
                         </div>
                     </div>
 
@@ -128,7 +98,6 @@
                         @Html.LabelFor(model => model.BirthCity, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.BirthCity, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.BirthCity)
                         </div>
                     </div>
 
@@ -149,7 +118,6 @@
                         @Html.LabelFor(model => model.JobSituation, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.DropDownListFor(model => model.JobSituation, new SelectList(Enum.GetValues(typeof(JobStatuis))),"--",new { @class = "form-select" })
-                            @Html.ValidationMessageFor(model => model.JobSituation)
                         </div>
                     </div>
                 </div>
@@ -160,7 +128,6 @@
                         @Html.LabelFor(model => model.LastJobCompany, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.LastJobCompany, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.LastJobCompany)
                         </div>
                     </div>
                 </div>        
@@ -169,7 +136,6 @@
                         @Html.LabelFor(model => model.LastJobCity, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.LastJobCity, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.LastJobCity)
                         </div>
                     </div>
                 </div>  
@@ -180,7 +146,6 @@
                         @Html.LabelFor(model => model.LastJobName, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.LastJobName, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.LastJobName)
                         </div>
                     </div>
                 </div>        
@@ -189,7 +154,6 @@
                         @Html.LabelFor(model => model.LastJobReasson, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.LastJobReasson, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.LastJobReasson)
                         </div>
                     </div>
                 </div>  
@@ -210,7 +174,6 @@
                         @Html.LabelFor(model => model.AcademicLevel, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.DropDownListFor(model => model.AcademicLevel, new SelectList(Enum.GetValues(typeof(StudyLevel))),"--",new { @class = "form-select" })
-                            @Html.ValidationMessageFor(model => model.AcademicLevel)
                         </div>
                     </div>
                 </div>
@@ -219,7 +182,6 @@
                         @Html.LabelFor(model => model.AcademicInstitution, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.AcademicInstitution, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.AcademicInstitution)
                         </div>
                     </div>
                 </div>  
@@ -230,7 +192,6 @@
                         @Html.LabelFor(model => model.DegreeFinalization, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.DegreeFinalization, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.DegreeFinalization)
                         </div>
                     </div>
                 </div> 
@@ -239,22 +200,16 @@
                         @Html.LabelFor(model => model.DegreeTitle, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.DegreeTitle, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.DegreeTitle)
                         </div>
                     </div>
                 </div> 
             </div>        
         </div>
     </div>
-    <br/>
-    <div class="form-group">
-        <input type="submit" value="Crear nuevo usuario" class="btn btn-success" />
-        <a asp-action="Index" class="btn btn-primary">Regresar a la lista</a>
-    </div>
-</form>
 
-
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+</div>
+<br/>
+<div>
+    <a asp-action="Index" class="btn btn-primary">Regresar al listado</a>
+    <a asp-action="Index" class="btn btn-success">Asignar pruebas</a>
+</div>

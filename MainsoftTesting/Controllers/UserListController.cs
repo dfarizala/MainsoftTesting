@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using MainsoftTesting.Models.CQRS.Request;
-using MainsoftTesting.Models.CQRS.Response;
+using MainsoftTesting.Domain.Models.CQRS.Request;
+using MainsoftTesting.Domain.Models.CQRS.Response;
 using System.Text;
 
 namespace MainsoftTesting.Controllers
@@ -80,8 +80,8 @@ namespace MainsoftTesting.Controllers
 
             try
             {
-                Models.CreateUserViewModel _userObject = 
-                    new Models.CreateUserViewModel { AcademicInstitution = collection["AcademicInstitution"].ToString(),
+                Domain.Models.CreateUserViewModel _userObject = 
+                    new Domain.Models.CreateUserViewModel { AcademicInstitution = collection["AcademicInstitution"].ToString(),
                                                      Address = collection["Address"].ToString(),
                                                      AcademicLevel = collection["AcademicLevel"].ToString(),
                                                      Age = Convert.ToInt32(collection["Age"].ToString()),

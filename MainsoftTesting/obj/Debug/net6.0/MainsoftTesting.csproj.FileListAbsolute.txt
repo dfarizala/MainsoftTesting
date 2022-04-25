@@ -476,3 +476,10 @@ C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\MainsoftTesting.genruntimeco
 C:\MainsoftTesting\MainsoftTesting\obj\Debug\net6.0\ref\MainsoftTesting.dll
 C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\AutoMapper.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Application.pdb
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting\bin\Debug\net6.0\MainsoftTesting.Infrastructure.pdb

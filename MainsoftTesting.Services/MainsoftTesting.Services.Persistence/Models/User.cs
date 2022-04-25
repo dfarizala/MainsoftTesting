@@ -5,7 +5,15 @@ namespace MainsoftTesting.Services.Persistence.Models
 {
     public partial class User
     {
+        public User()
+        {
+            UserExamAnswers = new HashSet<UserExamAnswer>();
+            UserExamTopics = new HashSet<UserExamTopic>();
+            UserExams = new HashSet<UserExam>();
+        }
+
         public int Id { get; set; }
+        public int? RecruiterId { get; set; }
         public string? Name { get; set; }
         public string? LastName { get; set; }
         public string? CellPhone { get; set; }
@@ -26,5 +34,10 @@ namespace MainsoftTesting.Services.Persistence.Models
         public string? AcademicInstitution { get; set; }
         public string? DegreeFinalization { get; set; }
         public string? DegreeTitle { get; set; }
+
+        public virtual Recruiter? Recruiter { get; set; }
+        public virtual ICollection<UserExamAnswer> UserExamAnswers { get; set; }
+        public virtual ICollection<UserExamTopic> UserExamTopics { get; set; }
+        public virtual ICollection<UserExam> UserExams { get; set; }
     }
 }

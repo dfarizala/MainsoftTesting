@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/4.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AutoMapper.dll": {}
+        }
+      },
       "Humanizer.Core/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2834,10 +2843,69 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "MainsoftTesting.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "4.2.1",
+          "MainsoftTesting.Domain": "1.0.0",
+          "MainsoftTesting.Infrastructure": "1.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "bin/placeholder/MainsoftTesting.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MainsoftTesting.Application.dll": {}
+        }
+      },
+      "MainsoftTesting.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MainsoftTesting.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MainsoftTesting.Domain.dll": {}
+        }
+      },
+      "MainsoftTesting.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "4.2.1",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "bin/placeholder/MainsoftTesting.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MainsoftTesting.Infrastructure.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/4.2.1": {
+      "sha512": "BxAMt0Sl9dQIPPualuMv6IhJ5QrWmWSgyYZ/QxcQcR2IBu57/CXG5IP+73sFIr4FMNtcrUugWnuOWkYnlrLVWQ==",
+      "type": "package",
+      "path": "automapper/4.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.4.2.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/dotnet5.1/AutoMapper.dll",
+        "lib/dotnet5.1/AutoMapper.xml",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.xml",
+        "lib/portable-net45+win+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.dll",
+        "lib/portable-net45+win+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.2.0": {
       "sha512": "rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "type": "package",
@@ -8780,10 +8848,28 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MainsoftTesting.Application/1.0.0": {
+      "type": "project",
+      "path": "../MainsoftTesting.Application/MainsoftTesting.Application.csproj",
+      "msbuildProject": "../MainsoftTesting.Application/MainsoftTesting.Application.csproj"
+    },
+    "MainsoftTesting.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MainsoftTesting.Domain/MainsoftTesting.Domain.csproj",
+      "msbuildProject": "../MainsoftTesting.Domain/MainsoftTesting.Domain.csproj"
+    },
+    "MainsoftTesting.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MainsoftTesting.Infrastructure/MainsoftTesting.Infrastructure.csproj",
+      "msbuildProject": "../MainsoftTesting.Infrastructure/MainsoftTesting.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 4.2.1",
+      "MainsoftTesting.Application >= 1.0.0",
+      "MainsoftTesting.Domain >= 1.0.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.3",
       "Newtonsoft.Json >= 13.0.1",
@@ -8827,7 +8913,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\MainsoftTesting\\MainsoftTesting.Application\\MainsoftTesting.Application.csproj": {
+              "projectPath": "C:\\MainsoftTesting\\MainsoftTesting.Application\\MainsoftTesting.Application.csproj"
+            },
+            "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj": {
+              "projectPath": "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -8840,6 +8933,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[4.2.1, )"
+          },
           "Microsoft.AspNet.WebApi.Client": {
             "target": "Package",
             "version": "[5.2.8, )"
@@ -8882,5 +8979,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"AutoMapper 4.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

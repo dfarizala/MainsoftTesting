@@ -1,0 +1,17 @@
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Application.deps.json
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Application.pdb
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\refint\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.pdb
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\ref\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Application\bin\Debug\net6.0\MainsoftTesting.Infrastructure.pdb
+C:\MainsoftTesting\MainsoftTesting.Application\obj\Debug\net6.0\MainsoftTesting.Application.csproj.CopyComplete

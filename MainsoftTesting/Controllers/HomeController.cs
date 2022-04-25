@@ -1,4 +1,4 @@
-﻿using MainsoftTesting.Models;
+﻿using MainsoftTesting.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

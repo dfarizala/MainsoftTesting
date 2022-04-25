@@ -177,7 +177,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj": {
+                "projectPath": "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

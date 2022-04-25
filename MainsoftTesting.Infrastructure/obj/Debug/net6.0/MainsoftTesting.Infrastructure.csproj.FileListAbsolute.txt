@@ -10,3 +10,6 @@ C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Debug\net6.0\MainsoftTesti
 C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Debug\net6.0\refint\MainsoftTesting.Infrastructure.dll
 C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Debug\net6.0\MainsoftTesting.Infrastructure.pdb
 C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Debug\net6.0\ref\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Debug\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Debug\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Debug\net6.0\MainsoftTesting.Infrastructure.csproj.CopyComplete

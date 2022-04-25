@@ -2876,6 +2876,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "4.2.1",
+          "MainsoftTesting.Domain": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "System.Net.Http": "4.3.4"
         },

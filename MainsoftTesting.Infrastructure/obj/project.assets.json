@@ -775,6 +775,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "MainsoftTesting.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MainsoftTesting.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MainsoftTesting.Domain.dll": {}
+        }
       }
     }
   },
@@ -2847,11 +2857,17 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "MainsoftTesting.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MainsoftTesting.Domain/MainsoftTesting.Domain.csproj",
+      "msbuildProject": "../MainsoftTesting.Domain/MainsoftTesting.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 4.2.1",
+      "MainsoftTesting.Domain >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1",
       "System.Net.Http >= 4.3.4"
     ]
@@ -2892,7 +2908,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj": {
+              "projectPath": "C:\\MainsoftTesting\\MainsoftTesting.Domain\\MainsoftTesting.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

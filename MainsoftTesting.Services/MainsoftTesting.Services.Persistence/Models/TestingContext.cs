@@ -341,11 +341,15 @@ namespace MainsoftTesting.Services.Persistence.Models
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Finish).HasColumnType("datetime");
+
                 entity.Property(e => e.ModificationDate).HasColumnType("datetime");
 
                 entity.Property(e => e.ModificationUser)
                     .HasMaxLength(20)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Start).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Exam)
                     .WithMany(p => p.UserExams)

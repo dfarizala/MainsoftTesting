@@ -14,6 +14,9 @@ namespace MainsoftTesting.Services.Persistence.Models
         public int Id { get; set; }
         public int? ExamId { get; set; }
         public int? UserId { get; set; }
+        public DateTime? Start { get; set; }
+        public DateTime? Finish { get; set; }
+        public int? TotalTime { get; set; }
         public int? ExamPercentage { get; set; }
         public string? CreationUser { get; set; }
         public DateTime? CreationDate { get; set; }

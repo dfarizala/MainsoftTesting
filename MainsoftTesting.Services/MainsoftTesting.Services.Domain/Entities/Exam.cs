@@ -36,4 +36,16 @@ namespace MainsoftTesting.Services.Domain.Entities
         public DateTime? ModificationDate { get; set; }
 
     }
+
+    public class ExamList
+    {
+        public int Id { get; set; }
+        public string? ExamName { get; set; }
+        public int? EstimatedTime { get; set; }
+        public string? Status { get; set; }
+        public string? ExamProfile { get; set; }
+        public string? ExamTechnology { get; set; }
+        public int? NumberOfQuestions { get; set; }
+
+    }
 }

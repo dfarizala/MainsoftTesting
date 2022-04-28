@@ -20,8 +20,4 @@
     <ProjectReference Include="..\MainsoftTesting.Domain\MainsoftTesting.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Exam\" />
-  </ItemGroup>
-
 </Project>

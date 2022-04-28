@@ -1,15 +1,30 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using MainsoftTesting.Domain.Models.CQRS.Request;
+using MainsoftTesting.Domain.Models.CQRS.Response;
+using MainsoftTesting.Application.Exam;
+using System.Text;
 
 namespace MainsoftTesting.Controllers
 {
     public class ExamController : Controller
     {
         // GET: ExamController
-        public ActionResult Index()
+        async public Task<ActionResult> Index()
         {
-            return View();
+            GetExamsResponse _Result = new GetExamsResponse();
+
+            _Result = await Operations.GetExam();
+
+            return View(_Result.Exams);
         }
+
 
         // GET: ExamController/Details/5
         public ActionResult Details(int id)

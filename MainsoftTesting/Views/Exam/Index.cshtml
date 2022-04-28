@@ -1,0 +1,71 @@
+﻿@model IEnumerable<MainsoftTesting.Domain.Models.ExamListModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Crear nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstimatedTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamProfile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamTechnology)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfQuestions)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstimatedTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamProfile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamTechnology)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfQuestions)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Eliminar", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -14,13 +14,13 @@ namespace MainsoftTesting.Domain.Models
 
     public class ExamListModel
     {
-        public int Id { get; set; }
-        public string? ExamName { get; set; }
-        public int? EstimatedTime { get; set; }
-        public string? Status { get; set; }
-        public string? ExamProfile { get; set; }
-        public string? ExamTechnology { get; set; }
-        public int? NumberOfQuestions { get; set; }
+        [Display(Name = "Id")] public int Id { get; set; }
+        [Display(Name = "Examen")] public string? ExamName { get; set; }
+        [Display(Name = "Tiempo estimado")] public int? EstimatedTime { get; set; }
+        [Display(Name = "Estado")] public string? Status { get; set; }
+        [Display(Name = "Perfil")] public string? ExamProfile { get; set; }
+        [Display(Name = "Tecnología")] public string? ExamTechnology { get; set; }
+        [Display(Name = "No. de preguntas")] public int? NumberOfQuestions { get; set; }
 
     }
 }

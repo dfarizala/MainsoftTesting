@@ -6,6 +6,7 @@ C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.deps.json
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.runtimeconfig.json
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.pdb
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\Humanizer.dll
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MessagePack.dll
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MessagePack.Annotations.dll
@@ -217,3 +218,9 @@ C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\zh-Hant\Microso
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Application.pdb
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\PubTmp\Out\MainsoftTesting.Infrastructure.pdb

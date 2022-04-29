@@ -1,0 +1,12 @@
+C:\MainsoftTesting\MainsoftTesting.Domain\bin\Release\net6.0\MainsoftTesting.Domain.deps.json
+C:\MainsoftTesting\MainsoftTesting.Domain\bin\Release\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Domain\bin\Release\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\refint\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Domain\obj\Release\net6.0\ref\MainsoftTesting.Domain.dll

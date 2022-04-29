@@ -265,3 +265,10 @@ C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\refint\MainsoftTesting.dll
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\MainsoftTesting.pdb
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\MainsoftTesting.genruntimeconfig.cache
 C:\MainsoftTesting\MainsoftTesting\obj\Release\net6.0\ref\MainsoftTesting.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\AutoMapper.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Application.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Application.pdb
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting\bin\Release\net6.0\MainsoftTesting.Infrastructure.pdb

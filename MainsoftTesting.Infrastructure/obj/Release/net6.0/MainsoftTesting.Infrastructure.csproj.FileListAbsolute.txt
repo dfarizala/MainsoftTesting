@@ -1,0 +1,15 @@
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Release\net6.0\MainsoftTesting.Infrastructure.deps.json
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Release\net6.0\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Release\net6.0\MainsoftTesting.Infrastructure.pdb
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Release\net6.0\MainsoftTesting.Domain.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\bin\Release\net6.0\MainsoftTesting.Domain.pdb
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.csproj.AssemblyReference.cache
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.AssemblyInfoInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.AssemblyInfo.cs
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.csproj.CopyComplete
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\refint\MainsoftTesting.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\MainsoftTesting.Infrastructure.pdb
+C:\MainsoftTesting\MainsoftTesting.Infrastructure\obj\Release\net6.0\ref\MainsoftTesting.Infrastructure.dll

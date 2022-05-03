@@ -23,4 +23,14 @@ namespace MainsoftTesting.Services.Domain.CQRS.Response
         public string Message { get; set; }
 
     }
+
+    public class GetAssignedExamsResponse
+    {
+        public bool Success { get; set; }
+        public string Error { get; set; }
+        public string Message { get; set; }
+        public List<AssignedExamList> Assignment { get; set; }
+
+    }
+
 }

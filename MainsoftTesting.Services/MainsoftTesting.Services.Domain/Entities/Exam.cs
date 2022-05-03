@@ -48,4 +48,18 @@ namespace MainsoftTesting.Services.Domain.Entities
         public int? NumberOfQuestions { get; set; }
 
     }
+
+    public class AssignedExamList
+    {
+        public int Id { get; set; }
+        public string? ExamName { get; set; }
+        public string? Profile { get; set; }
+        public string? Technology { get; set; }
+        public string? UserName { get; set; }
+        public string? DocType { get; set; }
+        public string? DocNumber { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Status { get; set; }
+    }
 }

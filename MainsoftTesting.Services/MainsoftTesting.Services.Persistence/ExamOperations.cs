@@ -49,9 +49,11 @@ namespace MainsoftTesting.Services.Persistence
                 var _Topics = (from topic in _Context.ExamTopics
                                where topic.ExamId == _Exam.Id
                                select new ExamTopic
-                               { Id = topic.Id,
-                                 TopicName = topic.TopicName,
-                                 ExamId = topic.ExamId }                               
+                               {
+                                   Id = topic.Id,
+                                   TopicName = topic.TopicName,
+                                   ExamId = topic.ExamId
+                               }
                                ).OrderByDescending(x => x.Id).ToList();
 
                 UserExam _ExamAssignation = new UserExam();
@@ -88,6 +90,36 @@ namespace MainsoftTesting.Services.Persistence
                     _Context.SaveChanges();
                 }
                 return true;
+            }
+        }
+
+        public static List<AssignedExamList> GetAssigned()
+        {
+            using (TestingContext context = new TestingContext())
+            {
+                var _List = (from exam in context.UserExams
+                             join e in context.Exams on exam.ExamId equals e.Id
+                             join x in context.ExamProfiles on e.ExamProfile equals x.Id
+                             join d in context.ExamTechnologies on e.ExamTechnology equals d.Id
+                             join u in context.Users on exam.UserId equals u.Id
+
+
+                             select new AssignedExamList()
+                             {
+                                 Id = exam.Id,
+                                 DocNumber = u.DocNumber,
+                                 DocType = u.DocType,
+                                 EndDate = exam.Finish,
+                                 ExamName = e.ExamName,
+                                 Profile = x.ProfileName,
+                                 StartDate = exam.Start,
+                                 Status = (exam.Start == null) ? "Sin iniciar" : "Iniciado",
+                                 Technology = d.TechnologyName,
+                                 UserName = u.Name + " " + u.LastName
+                             }).ToList(); ;
+
+                return _List;
+
             }
         }
     }

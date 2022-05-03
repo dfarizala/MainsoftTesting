@@ -70,5 +70,38 @@ namespace MainsoftTesting.Services.Application
 
             return _Response;
         }
+
+        public static GetAssignedExamsResponse GetAssignedExams()
+        {
+            GetAssignedExamsResponse _Response = new GetAssignedExamsResponse();
+
+            try
+            {
+                List<AssignedExamList> _list = ExamOperations.GetAssigned();
+
+                if (_list != null)
+                {
+                    _Response.Error = "OK";
+                    _Response.Message = "Success";
+                    _Response.Success = true;
+                    _Response.Assignment = _list;
+                }
+                else
+                {
+                    throw new Exception("No records found");
+                }
+                return _Response;
+            }
+            catch (Exception ex)
+            {
+                _Response.Error = "FAIL";
+                _Response.Message = ex.Message;
+                _Response.Success = false;
+                _Response.Assignment = null;
+
+                return _Response;
+            }
+        }
+
     }
 }

@@ -33,5 +33,12 @@ namespace MainsoftTesting.Services.Controllers
             return ExamApplication.AssignExam(request);
         }
 
+        [HttpPost]
+        [Route("GetAssigned")]
+        public GetAssignedExamsResponse GetAssignedExams()
+        {
+            return ExamApplication.GetAssignedExams();
+        }
+
     }
 }

@@ -15,4 +15,12 @@ namespace MainsoftTesting.Services.Domain.CQRS.Response
         public List<ExamList> Exams { get; set; }
 
     }
+
+    public class AssignExamResponse
+    {
+        public bool Success { get; set; }
+        public string Error { get; set; }
+        public string Message { get; set; }
+
+    }
 }

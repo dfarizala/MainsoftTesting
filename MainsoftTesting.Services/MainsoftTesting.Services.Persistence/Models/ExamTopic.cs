@@ -14,11 +14,13 @@ namespace MainsoftTesting.Services.Persistence.Models
 
         public int Id { get; set; }
         public string? TopicName { get; set; }
+        public int? ExamId { get; set; }
         public string? CereationUser { get; set; }
         public DateTime? CreationDate { get; set; }
         public string? ModificationUser { get; set; }
         public DateTime? ModificationDate { get; set; }
 
+        public virtual Exam? Exam { get; set; }
         public virtual ICollection<QuestionHeader> QuestionHeaders { get; set; }
         public virtual ICollection<UserExamAnswer> UserExamAnswers { get; set; }
         public virtual ICollection<UserExamTopic> UserExamTopics { get; set; }

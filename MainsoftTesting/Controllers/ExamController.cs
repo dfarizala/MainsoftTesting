@@ -15,7 +15,7 @@ namespace MainsoftTesting.Controllers
 {
     public class ExamController : Controller
     {
-        // GET: ExamController
+        // GET: ExamController<
         async public Task<ActionResult> Index()
         {
             GetExamsResponse _Result = new GetExamsResponse();

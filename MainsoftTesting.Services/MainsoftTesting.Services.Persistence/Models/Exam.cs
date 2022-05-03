@@ -7,6 +7,7 @@ namespace MainsoftTesting.Services.Persistence.Models
     {
         public Exam()
         {
+            ExamTopics = new HashSet<ExamTopic>();
             QuestionHeaders = new HashSet<QuestionHeader>();
             UserExams = new HashSet<UserExam>();
         }
@@ -25,6 +26,7 @@ namespace MainsoftTesting.Services.Persistence.Models
 
         public virtual ExamProfile? ExamProfileNavigation { get; set; }
         public virtual ExamTechnology? ExamTechnologyNavigation { get; set; }
+        public virtual ICollection<ExamTopic> ExamTopics { get; set; }
         public virtual ICollection<QuestionHeader> QuestionHeaders { get; set; }
         public virtual ICollection<UserExam> UserExams { get; set; }
     }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MainsoftTesting.Services.Domain.Entities;
 using MainsoftTesting.Services.Persistence;
 using MainsoftTesting.Services.Domain.CQRS.Response;
+using MainsoftTesting.Services.Domain.CQRS.Request;
 
 namespace MainsoftTesting.Services.Application
 {
@@ -41,6 +42,33 @@ namespace MainsoftTesting.Services.Application
 
                 return _Response;
             }
+        }
+
+        public static AssignExamResponse AssignExam(AssignExamRequest request)
+        {
+            AssignExamResponse _Response = new AssignExamResponse();
+            try
+            {
+                bool _Result = ExamOperations.AssignExam(request.idUser, request.idExam, request.Recruiter);
+                if (_Result)
+                {
+                    _Response.Message = "Exam assigned successfully";
+                    _Response.Success = true;
+                    _Response.Error = "OK";
+                }
+                else
+                {
+                    throw new Exception("Error in exam assignation");
+                }
+            }
+            catch (Exception ex)
+            {
+                _Response.Message = ex.Message;
+                _Response.Success = false;
+                _Response.Error = "FAIL";
+            }
+
+            return _Response;
         }
     }
 }

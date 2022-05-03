@@ -141,6 +141,11 @@ namespace MainsoftTesting.Services.Persistence.Models
                 entity.Property(e => e.TopicName)
                     .HasMaxLength(200)
                     .IsUnicode(false);
+
+                entity.HasOne(d => d.Exam)
+                    .WithMany(p => p.ExamTopics)
+                    .HasForeignKey(d => d.ExamId)
+                    .HasConstraintName("FK_ExamTopic_Exam");
             });
 
             modelBuilder.Entity<QuestionHeader>(entity =>

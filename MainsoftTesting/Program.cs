@@ -23,5 +23,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "assign-EXAM",
+    pattern: "{controller=Exam}/{action=Assign}/{id?}/{userId?}");
+
 
 app.Run();

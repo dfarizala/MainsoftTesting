@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 using MainsoftTesting.Domain.Models.CQRS.Request;
 using MainsoftTesting.Domain.Models.CQRS.Response;
 using System.Net.Http.Json;
+using MainsoftTesting.Domain.CQRS.Request;
 
 namespace MainsoftTesting.Infrastructure.Exams
 {
@@ -57,6 +58,31 @@ namespace MainsoftTesting.Infrastructure.Exams
 
                 return (_Result);
             }
+        }
+
+        async static public Task<AssignExamResponse> AssignExam(AssignExamRequest request)
+        {
+            AssignExamResponse _Result = new AssignExamResponse();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_baseUrl);
+                client.DefaultRequestHeaders.Clear();
+                //HttpContent _Content = new JsonContent(_Request, );
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage Res = await client.PostAsJsonAsync("Exam/AssignExam", request);
+                if (Res.IsSuccessStatusCode)
+                {
+                    var UserResponse = Res.Content.ReadAsStringAsync().Result;
+                    _Result = JsonConvert.DeserializeObject<AssignExamResponse>(UserResponse);
+
+                    if (!_Result.Success)
+                        throw new Exception("Error saving record");
+                }
+
+                return _Result;
+            }
+
         }
 
     }

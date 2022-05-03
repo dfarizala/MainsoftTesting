@@ -211,5 +211,6 @@
 <br/>
 <div>
     <a asp-action="Index" class="btn btn-primary">Regresar al listado</a>
-    <a asp-action="Index" class="btn btn-success">Asignar pruebas</a>
+    @Html.ActionLink("Asignar examen", "Assign", "Exam", new { id=Model.Id }, new { @class = "btn btn-success"})
+
 </div>

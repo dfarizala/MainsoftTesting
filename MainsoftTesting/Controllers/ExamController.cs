@@ -10,6 +10,8 @@ using MainsoftTesting.Domain.Models.CQRS.Request;
 using MainsoftTesting.Domain.Models.CQRS.Response;
 using MainsoftTesting.Application.Exam;
 using System.Text;
+using MainsoftTesting.Domain.Models;
+using MainsoftTesting.Domain.CQRS.Request;
 
 namespace MainsoftTesting.Controllers
 {
@@ -102,6 +104,31 @@ namespace MainsoftTesting.Controllers
             _Result = await Operations.GetAssignedExam();
 
             return View(_Result.Assignment);
+        }
+
+        async public Task<ActionResult> Assign(int id, int userId)
+        {
+            if (userId == 0)
+            {
+                UserDetailResponse _Result = new UserDetailResponse();
+                GetExamsResponse _Exams = new GetExamsResponse();
+
+                _Exams = await Operations.GetExam();
+                _Result = await Application.User.Operations.GetUserDetails(id);
+
+                ViewBag.UserObject = _Result.User;
+                return View(_Exams.Exams);
+            }
+            else
+            {
+                AssignExamRequest request = new AssignExamRequest();
+                request.idUser = userId;
+                request.idExam = id;
+                request.Recruiter = "1";
+
+                var _Result = await Application.Exam.Operations.AssignExam(request);
+                return RedirectToAction(nameof(Assigned));
+            }
         }
 
     }

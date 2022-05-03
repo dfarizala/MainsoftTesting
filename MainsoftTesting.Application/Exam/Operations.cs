@@ -15,5 +15,8 @@ namespace MainsoftTesting.Application.Exam
         public static Task<GetExamsResponse> GetExam()
             => Infrastructure.Exams.Operations.GetExams();
 
+        public static Task<GetAssignedExamsResponse> GetAssignedExam()
+            => Infrastructure.Exams.Operations.GetAssignedExams();
+
     }
 }

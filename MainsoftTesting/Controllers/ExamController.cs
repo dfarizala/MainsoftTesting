@@ -94,5 +94,15 @@ namespace MainsoftTesting.Controllers
                 return View();
             }
         }
+
+        async public Task<ActionResult> Assigned()
+        {
+            GetAssignedExamsResponse _Result = new GetAssignedExamsResponse();
+
+            _Result = await Operations.GetAssignedExam();
+
+            return View(_Result.Assignment);
+        }
+
     }
 }

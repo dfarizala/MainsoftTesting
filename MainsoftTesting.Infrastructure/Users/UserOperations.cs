@@ -45,7 +45,6 @@ namespace MainsoftTesting.Infrastructure.Users
             {
                 client.BaseAddress = new Uri(_baseUrl);
                 client.DefaultRequestHeaders.Clear();
-                //HttpContent _Content = new JsonContent(_Request, );
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage Res = await client.PostAsJsonAsync("User/UserDetail", _Request);
                 if (Res.IsSuccessStatusCode)

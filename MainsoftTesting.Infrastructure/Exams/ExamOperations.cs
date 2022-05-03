@@ -35,5 +35,29 @@ namespace MainsoftTesting.Infrastructure.Exams
                 return _Result;
             }
         }
+
+        async static public Task<GetAssignedExamsResponse> GetAssignedExams()
+        {
+            GetAssignedExamsResponse _Result = new GetAssignedExamsResponse();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_baseUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage Res = await client.PostAsJsonAsync("Exam/GetAssigned", 0);
+                if (Res.IsSuccessStatusCode)
+                {
+                    var UserResponse = Res.Content.ReadAsStringAsync().Result;
+                    _Result = JsonConvert.DeserializeObject<GetAssignedExamsResponse>(UserResponse);
+
+                    if (!_Result.Success)
+                        return null;
+                }
+
+                return (_Result);
+            }
+        }
+
     }
 }

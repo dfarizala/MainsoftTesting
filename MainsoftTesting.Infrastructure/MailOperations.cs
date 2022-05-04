@@ -28,7 +28,7 @@ namespace MainsoftTesting.Infrastructure
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage Res = await client.PostAsJsonAsync("Mail/SendMail", request);
                 if (Res.IsSuccessStatusCode)
-                {
+                {   
                     return true;
                 }
 

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MainsoftTesting.Services.Domain\MainsoftTesting.Services.Domain.csproj" />
+    <ProjectReference Include="..\MainsoftTesting.Services.Infrastructure\MainsoftTesting.Services.Infrastructure.csproj" />
     <ProjectReference Include="..\MainsoftTesting.Services.Persistence\MainsoftTesting.Services.Persistence.csproj" />
   </ItemGroup>
 

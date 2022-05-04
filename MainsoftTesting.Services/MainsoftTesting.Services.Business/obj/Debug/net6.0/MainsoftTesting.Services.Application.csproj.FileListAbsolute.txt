@@ -15,3 +15,5 @@ C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bi
 C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Domain.pdb
 C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Persistence.pdb
 C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\obj\Debug\net6.0\MainsoftTesting.Services.Application.csproj.CopyComplete
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Infrastructure.dll
+C:\MainsoftTesting\MainsoftTesting.Services\MainsoftTesting.Services.Business\bin\Debug\net6.0\MainsoftTesting.Services.Infrastructure.pdb

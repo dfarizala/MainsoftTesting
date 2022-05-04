@@ -108,10 +108,11 @@ namespace MainsoftTesting.Controllers
 
         async public Task<ActionResult> Assign(int id, int userId)
         {
+            UserDetailResponse _Result = new UserDetailResponse();
+            GetExamsResponse _Exams = new GetExamsResponse();
+
             if (userId == 0)
             {
-                UserDetailResponse _Result = new UserDetailResponse();
-                GetExamsResponse _Exams = new GetExamsResponse();
 
                 _Exams = await Operations.GetExam();
                 _Result = await Application.User.Operations.GetUserDetails(id);
@@ -126,7 +127,24 @@ namespace MainsoftTesting.Controllers
                 request.idExam = id;
                 request.Recruiter = "1";
 
-                var _Result = await Application.Exam.Operations.AssignExam(request);
+                var _Asignation = await Application.Exam.Operations.AssignExam(request);
+                if (_Asignation.Success)
+                {
+                    _Result = await Application.User.Operations.GetUserDetails(userId);
+
+                    string _BaseUrl = "https://testingmainsoft.azurewebsites.net";
+                    string _UserData = userId + "-" + id + "-" + System.DateTime.Now.Date.ToString();
+                    string _Token = Application.Crypto.EncryptString(_UserData);
+                    string _Link = _BaseUrl + "/" + _Token;
+                    string _Body = "Link para el examen :" + _Link;
+                    string _Subject = "Prueba para " + _Result.User.LastName + " " + _Result.User.Name;
+
+
+                    MailRequest _MailObj = new MailRequest { FromEmail = "dfarizala@gmail.com",
+                        Body = _Body, Subject =  _Subject, ToEmail = _Result.User.Email };
+                    bool _Mail = await Application.MailOperations.SendMail(_MailObj);
+
+                }
                 return RedirectToAction(nameof(Assigned));
             }
         }

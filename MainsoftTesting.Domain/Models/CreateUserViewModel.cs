@@ -25,6 +25,8 @@ namespace MainsoftTesting.Domain.Models
         public string? DocNumber { get; set; }
         [Display(Name = "Dirección")]
         public string? Address { get; set; }
+        [Display(Name = "Correo")]
+        public string? Email { get; set; }
         [Display(Name = "Nacionalidad")]
         public string? Nationality { get; set; }
         [Display(Name = "Edad")]

@@ -5,6 +5,7 @@ using MainsoftTesting.Services.Domain.CQRS.Response;
 using MainsoftTesting.Services.Domain.Entities;
 using MainsoftTesting.Services.Application;
 using AutoMapper;
+using MainsoftTesting.Services.Infrastructure;
 
 namespace MainsoftTesting.Services.Controllers
 {

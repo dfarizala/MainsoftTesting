@@ -72,6 +72,7 @@ namespace MainsoftTesting.Controllers
                                                      MaritalStatus = collection["MaritalStatus"].ToString(),
                                                      Name = collection["Name"].ToString(),
                                                      Nationality = collection["Nationality"].ToString(),
+                                                     Email = collection["Email"].ToString(),
                                                      Phone = collection["Phone"].ToString()
                     };
 

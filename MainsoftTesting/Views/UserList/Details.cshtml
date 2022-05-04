@@ -65,11 +65,19 @@
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-3">
                     <div class="form-group">
                         @Html.LabelFor(model => model.Address, new { @class = "form-label" })
                         <div class="col-md-12">
                             @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, new { @class = "form-label" })
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
                         </div>
                     </div>
                 </div>

@@ -288,6 +288,10 @@ namespace MainsoftTesting.Services.Persistence.Models
                     .HasMaxLength(10)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Email)
+                    .HasMaxLength(500)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Gender)
                     .HasMaxLength(20)
                     .IsUnicode(false);

@@ -18,6 +18,7 @@ namespace MainsoftTesting.Services.Domain.Entities
         public string? DocType { get; set; }
         public string? DocNumber { get; set; }
         public string? Address { get; set; }
+        public string? Email { get; set; }
         public string? Nationality { get; set; }
         public int Age { get; set; }
         public string? BirthCity { get; set; }

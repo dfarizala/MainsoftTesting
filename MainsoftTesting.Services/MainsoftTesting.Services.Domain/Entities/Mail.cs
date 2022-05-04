@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MainsoftTesting.Services.Domain.Entities
 {
-    public class Mail
+    public class MailObject
     {
         public string FromEmail { get; set; }
         public string ToEmail { get; set; }

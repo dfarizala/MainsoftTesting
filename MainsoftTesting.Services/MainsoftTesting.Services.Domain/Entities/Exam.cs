@@ -37,6 +37,8 @@ namespace MainsoftTesting.Services.Domain.Entities
 
     }
 
+
+
     public class ExamList
     {
         public int Id { get; set; }

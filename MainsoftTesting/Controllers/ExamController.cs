@@ -135,8 +135,8 @@ namespace MainsoftTesting.Controllers
                     string _BaseUrl = "https://testingmainsoft.azurewebsites.net";
                     string _UserData = userId + "-" + id + "-" + System.DateTime.Now.Date.ToString();
                     string _Token = Application.Crypto.EncryptString(_UserData);
-                    string _Link = _BaseUrl + "/" + _Token;
-                    string _Body = "Link para el examen :" + _Link;
+                    string _Link = _BaseUrl + "/Default?tokenId=" + _Token;
+                    string _Body = "Link para el examen: " + _Link;
                     string _Subject = "Prueba para " + _Result.User.LastName + " " + _Result.User.Name;
 
 

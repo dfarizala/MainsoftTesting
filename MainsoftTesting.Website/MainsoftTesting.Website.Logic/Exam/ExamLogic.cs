@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MainsoftTesting.Website.Data
+namespace MainsoftTesting.Website.Logic
 {
-    public class Class1
+    public class ExamLogic
     {
+
     }
 }

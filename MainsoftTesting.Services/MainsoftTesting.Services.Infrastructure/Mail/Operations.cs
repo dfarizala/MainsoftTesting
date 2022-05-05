@@ -29,7 +29,7 @@ namespace MainsoftTesting.Services.Infrastructure
         {
             var email = new MimeMessage();
             //email.Sender = MailboxAddress.Parse(_mailSettings.Mail);
-            email.Sender = MailboxAddress.Parse("dfarizala@gmail.com");
+            email.Sender = MailboxAddress.Parse("pruebas@mainsoft.co");
             email.To.Add(MailboxAddress.Parse(mailRequest.ToEmail));
             email.Subject = mailRequest.Subject;
             var builder = new BodyBuilder();
@@ -38,8 +38,8 @@ namespace MainsoftTesting.Services.Infrastructure
             using var smtp = new SmtpClient();
             //smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             //smtp.Authenticate(_mailSettings.Mail, _mailSettings.Password);
-            smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("dfarizala@gmail.com", "Fokazu2003Madison10fox");
+            smtp.Connect("smtp-relay.sendinblue.com", 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate("dfarizala@gmail.com", "ajAfVrn53HORgCX9");
             await smtp.SendAsync(email);
             smtp.Disconnect(true);
         }
